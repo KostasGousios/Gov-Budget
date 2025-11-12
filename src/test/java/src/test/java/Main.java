@@ -34,7 +34,7 @@ public class Main {
         tameio.prosthikiStoTameio(diafora);
 
         // Εμφάνιση αποτελεσμάτων
-        System.out.println("Άθροισμα προβλεπόμενων εσόδων" + esoda.getAthroismaEsodon());
+        System.out.println("Άθροισμα προβλεπόμενων εσόδων:" + esoda.getAthroismaEsodon());
         System.out.println("Άθροισμα προβλεπόμενων εξόδων: " + exoda.getAthroismaExodon());
         System.out.println("Διαφορά προβλεπόμενων εσόδων-εξόδων: " + diafora);
         System.out.println("Νέο ποσό στο κρατικό ταμείο: " + tameio.getTameio());
