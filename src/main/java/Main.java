@@ -2,7 +2,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
                Scanner input = new Scanner(System.in); //Δημιουργία αντικειμένου για εισαγωγή αριθμών
+         for (MenuOptions option : MenuOptions.values()) {
+             System.out.println((option.ordinal() + 1) + "." + option.getDescription());
+        }
+        int choice = input.nextInt();
 
+        MenuOptions selectedOption = MenuOptions.values()[choice - 1];
+        System.out.println("επελεξες" + selectedOption.getDescription());
         // Αρχικό ποσό στο ταμείο
         System.out.print("Δώσε το αρχικό ποσό του κρατικού ταμείου από το προηγούμενο έτος: ");
         int arxikoPoso = input.nextInt();
@@ -39,16 +45,5 @@ public class Main {
         System.out.println("Νέο ποσό στο κρατικό ταμείο: " + tameio.getTameio());
 
         input.close();
-    
-    // ΔΙΑΧΕΙΡΗΣΗ ΜΕΝΟΥ ΕΠΙΛΟΓΩΝ enum 
-        System.out.println("διαλεξε μια απο τις παρακατω επιλογες");
-
-        for (MenuOptions option : MenuOptions.values()) {
-             System.out.println((option.ordinal() + 1) + "." + option.getDescription());
-        }
-        int choice = input.nextInt();
-
-        MenuOptions selectedOption = MenuOptions.values()[choice - 1];
-        System.out.println("επελεξες" + selectedOption.getDescription());
     }
 }
