@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public abstract class Ypourgeia {
     protected String onoma;
+    protected static final Scanner s = new Scanner(System.in);
     public Ypourgeia(String onoma) {
         this.onoma = onoma;
     }
@@ -11,10 +12,7 @@ public abstract class Ypourgeia {
     }
     //θελω μενου επιλογων εδω
     public double eisagwgiProipologismou() {
-        try (Scanner s = new Scanner(System.in)) {
-            System.out.println("Δώσε τον προϋπολογισμό σου");
-            return s.nextDouble();
-        }
+    System.out.println("Δώσε τον προϋπολογισμό σου: ");
+    return s.nextDouble();
     }
 }
-
