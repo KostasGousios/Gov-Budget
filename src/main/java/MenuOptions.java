@@ -1,10 +1,9 @@
 
 public enum MenuOptions {
-     PROTHIPOURGOS_ARXH("δημιουργια πρωτου υποθετικου προυπολογισμου"),
-     YPOYRGEIO_PAIDEIAS("ζηταει το υπουργειο παιδειας χρηματα"),
-     YPOYRGEIO_YGEIAS("ζηταει το υπουργειο υγειας χρηματα"),
-     PROTHIPOYRGOS_MESH("προθυπουργος εισαγει τι ποσα  πραγματοποιηθηκαν"),
-     PROTHIPOURGOS_TELOS("προθυπουργος θελει να παραδωσει τελικο προυπολογισμο");
+     PROTHIPOURGOS("ΑΝ ΕΙΣΤΕ ΠΡΟΘΥΠΟΥΡΓΟΣ/ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ ΠΑΤΗΣΤΕ 1"),
+     YPOYRGEIO_PAIDEIAS("ΑΝ ΕΣΤΕ ΥΠΟΥΡΓΕΙΟ ΠΑΕΙΔΕΙΑΣ ΠΑΤΗΣΤΕ 2"),
+     YPOYRGEIO_YGEIAS("ΑΝ ΕΙΣΤΕ ΤΟ ΥΠΟΥΡΓΕΙΟ ΥΓΕΙΑΣ ΠΑΤΗΣΤΕ 3"),
+     
 
      private String description;
 
