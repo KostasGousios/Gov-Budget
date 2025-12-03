@@ -7,7 +7,7 @@ public abstract class Ypourgeia {
     protected String onoma;
     protected static final Scanner s = new Scanner(System.in);
     protected Map<String, Double> logariasmoi = new HashMap<>(); //κενος πινακας με λογαριασμους και ποσα
-     protected Map<String, Double> posostaKatanomis = new HashMap<>(); //κενο πινακας με τα ποσοστα κατανομης που θα δωσει ο χρηστης
+    protected Map<String, Double> posostaKatanomis = new HashMap<>(); //κενο πινακας με τα ποσοστα κατανομης που θα δωσει ο χρηστης
     public Ypourgeia(String onoma) {
         this.onoma = onoma;
         orismosLogariasmwn();
@@ -16,10 +16,11 @@ public abstract class Ypourgeia {
     public String getOnoma() {
         return onoma;
     }
+    private double zitoumeno;
     // Α) μεθοδος που ζηταει προυπολογισμο υπουργειου (1η επιλογη για τα υπουργεια στη main)
     public double eisagwgiProipologismou() {
         System.out.println("Δώσε τον πρϋπολογισμό σου ");
-        return s.nextDouble();
+         return this.zitoumeno = s.nextDouble();
     }
     // Β) μεθοδοι για 2η επιλογη για τα υπουργεια στη main 
     private void eisagwgiPosostwn() {
@@ -38,6 +39,7 @@ public abstract class Ypourgeia {
     }
     //μεθοδος που ζηταει απο πρωθυπουργο τον προυπολογισμο καθε υπουργειου
     public void katanomiProypApoProthypoyrgo() { 
+        System.out.println("Το υπουργείο " + onoma + "έχει ζητήσει" + zitoumeno + "€" );
         System.out.println("\n Πόσα χρήματα θα δώσετε στο " + onoma + ";");
         double poso = s.nextDouble();
          for (String log : logariasmoi.keySet()) { //επαναληψη για καθε λογαριασμο του υπουργειου μεσω του πινακα Map 
