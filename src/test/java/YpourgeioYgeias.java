@@ -8,4 +8,19 @@ public class YpourgeioYgeias extends Ypourgeia {
         logariasmoi.put("Κέντρα Υγείας", 0.0);
         logariasmoi.put("Φάρμακα & Υλικό", 0.0);
     }
+    
+    // Διαχειριση επιλογων υπουργειου υγειας 
+    public static ygeia(int x) {
+    if (x==1) {
+        Main.isYpourgeiaPrepared = true; //για exception σε enum προθυπουργου            
+           YpourgeioYgeias obj = new YpourgeioYgeias();
+           obj.eisagwgiProipologismou();
+    } else if (x == 2) {
+      
+
+    } else {
+
+    }
+
+    }
 }
