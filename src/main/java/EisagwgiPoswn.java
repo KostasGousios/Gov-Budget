@@ -34,15 +34,15 @@ public class EisagwgiPoswn {
         exoda = new Exoda(misthoi, syntakseis, loipaExoda, exodagiaypourgeia);
 
         // Υπολογισμός διαφοράς με χρήση μεθόδων get άλλων κλάσεων
-        int diafora = esoda.getAthroismaEsodon() - exoda.getAthroismaExodon();
+        int diaforaprovl = esoda.getAthroismaEsodon() - exoda.getAthroismaExodon();
 
         // Προσθήκη στο κρατικό ταμείο για να γίνει η πράξη στη κλάση KratikoTameio
-        tameio.prosthikiStoTameio(diafora);
+        tameio.prosthikiStoTameio(diaforaprovl);
 
         // Εμφάνιση αποτελεσμάτων
         System.out.println("Άθροισμα προβλεπόμενων εσόδων" + esoda.getAthroismaEsodon());
         System.out.println("Άθροισμα προβλεπόμενων εξόδων: " + exoda.getAthroismaExodon());
-        System.out.println("Διαφορά προβλεπόμενων εσόδων-εξόδων: " + diafora);
+        System.out.println("Διαφορά προβλεπόμενων εσόδων-εξόδων: " + diaforaprovl);
         System.out.println("Νέο ποσό στο κρατικό ταμείο: " + tameio.getTameio());
     }
     public void pragmatika() {
