@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        
+               Scanner input = new Scanner(System.in); //Δημιουργία αντικειμένου για εισαγωγή αριθμών
+               
         // ΔΙΑΧΕΙΡΗΣΗ ΜΕΝΟΥ ΕΠΙΛΟΓΩΝ enum 
         System.out.println("διαλεξε μια απο τις παρακατω επιλογες");
 
@@ -13,7 +13,21 @@ public class Main {
 
         MenuOptions selectedOption = MenuOptions.values()[choice - 1];
         System.out.println("επελεξες" + selectedOption.getDescription());
+        
+        
+        // ΠΡΟΘΥΠΟΥΡΓΟΣ-ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ 
+        
+        if (choice == 1  ) { 
+        System.out.println("ΔΙΑΛΕΞΕ ΜΙΑ ΑΠΟ ΤΙΣ ΠΑΡΑΚΑΤΩ ΕΠΙΛΟΓΕΣ ");
 
+         for (MenuOptionsProthipourgos option : MenuOptionsProthipourgos.values()) {
+              System.out.println((option.ordinal() + 1) + "." + option.getDescriptionProthipourgos());
+         }
+         int choiceProthipourgou = input.nextInt();
+
+         MenuOptionsProthipourgos selectedChoice = MenuOptionsProthipourgos.values()[choiceProthipourgou-1];
+         System.out.println("επελεξες" + "." + selectedChoice.getDescriptionProthipourgos());
+         }
         // ΔΙΑΧΕΙΡΙΣΗ ΜΕΝΟΥ ΕΠΙΛΟΓΩΝ ΓΙΑ ΥΠΟΥΡΓΕΙΟ Παιδειας 
         
         if (choice == 2) {
