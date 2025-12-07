@@ -10,8 +10,6 @@ public abstract class Ypourgeia {
     protected Map<String, Double> posostaKatanomis = new HashMap<>(); //κενο πινακας με τα ποσοστα κατανομης που θα δωσει ο χρηστης
     public Ypourgeia(String onoma) {
         this.onoma = onoma;
-        orismosLogariasmwn();
-        eisagwgiPosostwn();
     }
     public String getOnoma() {
         return onoma;
@@ -23,7 +21,7 @@ public abstract class Ypourgeia {
          return this.zitoumeno = s.nextDouble();
     }
     // Β) μεθοδοι για 2η επιλογη για τα υπουργεια στη main 
-    private void eisagwgiPosostwn() {
+    public void eisagwgiPosostwn() {
         System.out.println("Δώσε ποσοστό για " + onoma);
         double sum = 0;
         for (String log : logariasmoi.keySet()) { //επαναλαμβανεται για οσα κλειδια εχει ο Map
