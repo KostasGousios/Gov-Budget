@@ -38,12 +38,12 @@ public class Main {
      }  else if (choiceProthipourgou == 2) {
            // εξαιρεση - δεν μπορει ο προθυπουργοσ να πατησει 2 αν τα υπουργεια δεν πατησουν 1
           if (isYpourgeiaPrepared == false) {
-        throw new IllegalStateException("Δεν μπορείς να επιλέξεις 2 πριν γίνει η επιλογή 1 στα Υπουργεία!");
-    }
-            YpourgeioPaideias obj2 = new YpourgeioPaideias();
-            obj2.katanomiProypApoProthypoyrgo();
-            YpourgeioYgeias obj3 = new YpourgeioYgeias();
-            obj3.katanomiProypApoProthypoyrgo();
+              throw new IllegalStateException("Δεν μπορείς να επιλέξεις 2 πριν γίνει η επιλογή 1 στα Υπουργεία!");
+          } 
+            YpourgeioPaideias objpaideia = new YpourgeioPaideias();
+            objpaideia.katanomiProypApoProthypoyrgo();
+            YpourgeioYgeias objygeia = new YpourgeioYgeias();
+            objygeia.katanomiProypApoProthypoyrgo();
      }
 }
        
