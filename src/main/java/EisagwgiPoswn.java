@@ -69,8 +69,8 @@ public class EisagwgiPoswn {
 
         if (tameio.getTameio() >= elleimma) { //ΕΛΕΓΧΟΣ ΕΑΝ ΤΟ ΚΡΑΤΙΚΟ ΤΑΜΕΙΟ ΜΠΟΡΕΙ ΝΑ ΚΑΛΥΨΕΙ ΤΗ ΖΗΜΙΑ/ΤΟ ΕΛΛΕΙΜΜΑ
             System.out.println("Αυτόματη μεταφορά " + elleimma + "€ από το Κρατικό Ταμείο για κάλυψη ελλείμματος");
-            tameio.prosthikiStoTameio(-(elleimma)); //ΑΦΑΙΡΕΣΗ ΑΠΟ ΤΟ ΑΠΟΘΕΜΑ
-            synolikaPragmatikaEsoda += elleimma; //ΠΡΟΣΘΕΣΗ ΣΤΑ ΠΡΑΓΜΑΤΙΚΑ ΕΣΟΔΑ ΤΗΣ ΧΡΟΝΙΑΣ
+            tameio.prosthikiStoTameio(-(elleimma)); //ΑΦΑΙΡΕΣΗ ΑΠΟ ΤΟ ΚΡΑΤΙΚΟ ΑΠΟΘΕΜΑΤΙΚΟ
+            synolikaPragmatikaEsoda += elleimma; //ΤΟ ΠΡΟΣΘΕΤΟΥΜΕ ΣΤΑ ΣΥΝΟΛΙΚΑ ΠΡΑΓΜΑΤΙΚΑ ΕΣΟΔΑ ΓΙΑ ΚΑΛΥΨΗ ΤΩΝ ΕΞΟΔΩΝ ΥΠΟΥΡΓΕΙΩΝ/ΑΛΛΩΝ ΑΝΑΓΚΩΝ
         } else { //ΑΛΛΙΩΣ ΚΑΤΑΛΛΗΛΟ ΜΗΝΥΜΑ. ΤΟ ΤΑΜΕΙΟ ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΤΑ ΚΑΛΥΨΕΙ
             System.out.println("Προσοχή: Το Κρατικό Ταμείο δεν επαρκεί για την πλήρη κάλυψη");
         } 
