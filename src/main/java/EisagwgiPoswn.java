@@ -60,6 +60,22 @@ public class EisagwgiPoswn {
         int pragmatikoExodo = Main.readSafeInt();
         synolikaPragmatikaExoda += pragmatikoExodo;
 
+        //ΑΥΤΟΜΑΤΗ ΕΝΕΡΓΟΠΟΙΗΣΗ ΣΕΝΑΡΙΟΥ ΟΙΚΟΝΟΜΙΚΗΣ ΚΡΙΣΗΣ
+        //ΕΑΝ ΤΑ ΣΥΝΟΛΙΚΑ ΕΞΟΔΑ (ΠΡΑΓΜΑΤΙΚΑ) ΞΕΠΕΡΑΣΟΥΝ ΤΑ ΠΡΟΒΛΕΠΟΜΕΝΑ
+        //ΑΥΤΟΜΑΤΗ ΑΝΤΙΔΡΑΣΗ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ
+        if (synolikaPragmatikaExoda > exoda.getAthroismaExodon()) {
+            System.out.println("Ανιχνεύθηκε υπέρβαση προϋπολογισμού (Κρίση)!");
+            int elleimma = synolikaPragmatikaExoda - exoda.getAthroismaExodon();
+
+        if (tameio.getTameio() >= elleimma) { //ΕΛΕΓΧΟΣ ΕΑΝ ΤΟ ΚΡΑΤΙΚΟ ΤΑΜΕΙΟ ΜΠΟΡΕΙ ΝΑ ΚΑΛΥΨΕΙ ΤΗ ΖΗΜΙΑ/ΤΟ ΕΛΛΕΙΜΜΑ
+            System.out.println("Αυτόματη μεταφορά " + elleimma + "€ από το Κρατικό Ταμείο για κάλυψη ελλείμματος");
+            tameio.prosthikiStoTameio(-(elleimma)); //ΑΦΑΙΡΕΣΗ ΑΠΟ ΤΟ ΑΠΟΘΕΜΑ
+            synolikaPragmatikaEsoda += elleimma; //ΠΡΟΣΘΕΣΗ ΣΤΑ ΠΡΑΓΜΑΤΙΚΑ ΕΣΟΔΑ ΤΗΣ ΧΡΟΝΙΑΣ
+        } else { //ΑΛΛΙΩΣ ΚΑΤΑΛΛΗΛΟ ΜΗΝΥΜΑ. ΤΟ ΤΑΜΕΙΟ ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΤΑ ΚΑΛΥΨΕΙ
+            System.out.println("Προσοχή: Το Κρατικό Ταμείο δεν επαρκεί για την πλήρη κάλυψη");
+        } 
+        }
+
         // ελεγχος να μην ξεπερναει το 90% των προβλεπομενων εξοδων
         double orio90 = exoda.getAthroismaExodon() * 0.90;
 
