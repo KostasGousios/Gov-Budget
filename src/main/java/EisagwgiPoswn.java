@@ -157,4 +157,17 @@ public class EisagwgiPoswn {
         System.out.println("Πραγματικό αποτέλεσμα(προβλεπόμενων): ΙΣΟΖΥΓΙΣΜΕΝΟ");
     }
     }
+    //Setters/Getters για τα συνολικα πραγματικα εσοδα/εξοδα
+    public int getSynolikaPragmatikaExoda() {
+        return synolikaPragmatikaExoda;
+    }
+    public void setSynolikaPragmatikaExoda(int a) {
+        this.synolikaPragmatikaExoda = a;
+    }
+     public int getSynolikaPragmatikaEsoda() {
+        return synolikaPragmatikaEsoda;
+    }
+    public void setSynolikaPragmatikaEsoda(int b) {
+        this.synolikaPragmatikaEsoda = b;
+    }
 }
