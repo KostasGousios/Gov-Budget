@@ -1,6 +1,6 @@
 public enum MenuOptions {
      PROTHIPOURGOS("ΑΝ ΕΙΣΤΕ ΠΡΟΘΥΠΟΥΡΓΟΣ/ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ ΠΑΤΗΣΤΕ 1"),
-     YPOYRGEIO_PAIDEIAS("ΑΝ ΕΙΣΤΕ ΥΠΟΥΡΓΕΙΟ ΠΑΕΙΔΕΙΑΣ ΠΑΤΗΣΤΕ 2"),
+     YPOYRGEIO_PAIDEIAS("ΑΝ ΕΙΣΤΕ ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ ΠΑΤΗΣΤΕ 2"),
      YPOYRGEIO_YGEIAS("ΑΝ ΕΙΣΤΕ ΤΟ ΥΠΟΥΡΓΕΙΟ ΥΓΕΙΑΣ ΠΑΤΗΣΤΕ 3");
      
      private String description;
@@ -12,3 +12,4 @@ public enum MenuOptions {
         return description;
      }
 }
+
