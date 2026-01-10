@@ -2,3 +2,4 @@
 target/
 *.db
 statebudget.db
+**/.DS_Store
