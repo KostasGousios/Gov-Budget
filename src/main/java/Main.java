@@ -140,7 +140,7 @@ public class Main {
             }
         }
         System.out.println("Το πρόγραμμα τερματίστηκε.");
-
+    }
 
         //ΜΕΘΟΔΟΣ ΓΙΑ ΣΕΝΑΡΙΟ ΠΑΝΔΗΜΙΑΣ 
         public static void senarioPandimia() {
@@ -164,7 +164,6 @@ public class Main {
         YpourgeioYgeias.objygeias.orismosLogariasmwn(); // Μηδενισμός
         YpourgeioYgeias.objygeias.katanomiEsoterika(); // Νέο μοίρασμα
         }
-    }
 }
     
        
