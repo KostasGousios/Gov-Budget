@@ -11,10 +11,9 @@ public class YpourgeioPaideias extends Ypourgeia {
     public static YpourgeioPaideias objpaideias = new YpourgeioPaideias();
     public static void paideia(int x) {
         if (x == 1) {
-           YpourgeioPaideias.objpaideias.eisagwgiProipologismou();
-           Main.isYpourgeiaPrepared = true; // για exception σε enum προθυπουργου 
+           YpourgeioPaideias.objpaideias.eisagwgiProipologismou(); 
      }  else if (x==2) {
            objpaideias.eisagwgiPosostwn();
      }
  } 
-} 
+}

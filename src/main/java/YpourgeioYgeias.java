@@ -11,8 +11,7 @@ public class YpourgeioYgeias extends Ypourgeia {
     public static YpourgeioYgeias objygeias  = new YpourgeioYgeias();
     // Διαχειριση επιλογων υπουργειου υγειας 
     public static void ygeia(int x) {
-    if (x==1) {
-        Main.isYpourgeiaPrepared = true; //για exception σε enum προθυπουργου    
+    if (x==1) { 
         YpourgeioYgeias.objygeias.eisagwgiProipologismou();        
     } else if (x == 2) {
         objygeias.eisagwgiPosostwn();
